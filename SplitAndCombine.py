@@ -72,6 +72,7 @@ class SplitAndCombineFiles:
 
     Author : Roshan Krishnappa
     """
+    
     def __init__(self):
         self.__input_file_name = None
         self.__chunk = None
@@ -278,7 +279,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    # Perform Split Operation
+    # Split Operation
     if not (args.split or args.merge):
         error_args("-s or -m has to be Specified")
 
@@ -289,7 +290,7 @@ if __name__ == "__main__":
             sm = SplitAndCombineFiles()
             sm.split(args.input, args.chunk)
 
-    # Perform Merge Operation
+    #  Merge Operation
     if args.merge:
         if not args.input:
             error_args("Merge command requires -i")
