@@ -72,7 +72,6 @@ class SplitAndCombineFiles:
 
     Author : Roshan Krishnappa
     """
-    
     def __init__(self):
         self.__input_file_name = None
         self.__chunk = None
