@@ -37,3 +37,53 @@ Note : This is not a CRC check, but does good to ensure file is merged properly
             self.check_list += str(data[:5]) + str(
                 data[int(data_length / 2) - 1:
                      int(data_length / 2) + 1]) + str(data[-5:])
+
+
+```
+Examples :
+
+python SplitAndCombine.py -s -i "New folder\first_project.zip" -n 700kb
+
+output
+Splitting the File Now
+Total file Size : 8162474
+Splitting into 12 files of 700kb size
+Creating New folder\first_project.zip-1.ros
+Creating New folder\first_project.zip-2.ros
+Creating New folder\first_project.zip-3.ros
+Creating New folder\first_project.zip-4.ros
+Creating New folder\first_project.zip-5.ros
+Creating New folder\first_project.zip-6.ros
+Creating New folder\first_project.zip-7.ros
+Creating New folder\first_project.zip-8.ros
+Creating New folder\first_project.zip-9.ros
+Creating New folder\first_project.zip-10.ros
+Creating New folder\first_project.zip-11.ros
+Creating New folder\first_project.zip-12.ros
+Creating the check file : New folder\first_project.zip-CRC.ros
+File split successfully
+```
+
+```
+
+python SplitAndCombine.py -m -i "New folder\first_project.zip"
+Merging the file to New folder\first_project.zip
+File Already Exist. Please remove the C:\Roshan\ZIP\New folder\first_project.zip and then re-run.
+
+Do you want to remove the file [Y/N] : y
+Merging the file first_project.zip-1.ros
+Merging the file first_project.zip-2.ros
+Merging the file first_project.zip-3.ros
+Merging the file first_project.zip-4.ros
+Merging the file first_project.zip-5.ros
+Merging the file first_project.zip-6.ros
+Merging the file first_project.zip-7.ros
+Merging the file first_project.zip-8.ros
+Merging the file first_project.zip-9.ros
+Merging the file first_project.zip-10.ros
+Merging the file first_project.zip-11.ros
+Merging the file first_project.zip-12.ros
+Checking if the files are merged properly
+File check : Passed
+File Merged successfully
+```
