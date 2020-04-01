@@ -1,6 +1,6 @@
 # SplitAndCompile
 
-This script is to split/combine the files
+This script is to split or combine or merge the files
 ```
 --------------------------------------------------------------
 Usage: SplitAndCombine.py [-h] [-i INPUT] [-s] [-n CHUNK] [-m]\n
